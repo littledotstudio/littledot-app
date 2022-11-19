@@ -12,7 +12,7 @@ def main():
         st.write("Make sure the word 'batch' is in the folder name!")
         result = st.button("Move Files!")
         if result:
-            subprocess.run(["bash", "/app/gdrive_scripts/move_approve.sh"])
+            subprocess.run(["bash", "move_approve.sh"])
             st.write(":smile: Success!")
     # elif page == "Exploration":
     #     st.title("Data Exploration")
