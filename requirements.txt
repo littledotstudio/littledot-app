@@ -1,2 +1,2 @@
 streamlit==1.14.0
-googleapiclient
+google-api-python-client
