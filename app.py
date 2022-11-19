@@ -12,8 +12,8 @@ def main():
         st.write("Make sure the word 'batch' is in the folder name!")
         result = st.button("Move Files!")
         if result:
-            subprocess.run([f"{sys.executable}", "/app/gdrive_scripts/refresh_token.py"])
-            st.write("finished")
+            subprocess.run(["bash", "/app/gdrive_scripts/move_approve.py"])
+            st.write(":smile: Success!")
     # elif page == "Exploration":
     #     st.title("Data Exploration")
     #     x_axis = st.selectbox("Choose a variable for the x-axis", df.columns, index=3)
