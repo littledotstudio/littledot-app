@@ -19,7 +19,7 @@ def download_pdf(pdf_file):
         # pylint: disable=maybe-no-member
         request = service.files().get_media(fileId=pdf_file_id)
         #file = io.BytesIO()
-        location = '/app/gdrive_scripts/'
+        location = '/app/'
         filename = 'tmp.pdf'
         fh = io.FileIO(location + filename, 'wb')
         downloader = MediaIoBaseDownload(fh, request, 1024 * 1024 * 1024)
